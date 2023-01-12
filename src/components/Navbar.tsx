@@ -1,8 +1,19 @@
 import React from "react"
+import ReactLogo from "../assets/react.svg";
+import "./Navbar.css"
 
 const Navbar = () => {
    return (
-      <h1>Navbar goes here</h1>
+      <nav className="navbar">
+         <div className="navbar__brand">
+            <img src={ReactLogo} alt="" />
+            <h3>ReactFacts</h3>
+         </div>
+         <div className="navbar__nav">
+            React Course - Project 1
+         </div>
+      </nav>
+
    )
 }
 
