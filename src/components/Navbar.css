@@ -1,0 +1,31 @@
+:root {
+   --NAVBAR-BGCOLOR: #141414;
+   --BORDER-COLOR: #313131;
+   --NAVBARBRAND-COLOR: #61DBFB;
+   --NAVBAR-NAV-COLOR: whitesmoke;
+   --LISTBULLET-COLOR: #61DBFB;
+   --PADDING: 1.5rem;
+}
+
+.navbar{
+   background-color: var(--NAVBAR-BGCOLOR);
+   padding: var(--PADDING);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar__brand {
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+}
+
+.navbar__brand h3 {
+   color: var(--NAVBARBRAND-COLOR);
+}
+
+.navbar__nav {
+   color: var(--NAVBAR-NAV-COLOR);
+   font-weight: bold;
+}
