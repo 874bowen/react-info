@@ -1,8 +1,12 @@
 :root {
+   /* fonts */
+   --FS: clamp(1.2rem, 3vh, 1.9rem);
+
+   /* colors */
    --NAVBAR-BGCOLOR: #141414;
    --BORDER-COLOR: #313131;
    --NAVBARBRAND-COLOR: #61DBFB;
-   --NAVBAR-NAV-COLOR: whitesmoke;
+   --NAVBAR-NAV-COLOR: #DEEBF8;
    --LISTBULLET-COLOR: #61DBFB;
    --PADDING: 1.5rem;
 }
@@ -28,4 +32,13 @@
 .navbar__nav {
    color: var(--NAVBAR-NAV-COLOR);
    font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+   .navbar__nav {
+      font-size: medium;
+   }
+   .navbar__brand h3 {
+      display: none;
+   }
 }

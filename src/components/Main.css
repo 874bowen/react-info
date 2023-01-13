@@ -1,11 +1,12 @@
 :root { 
    /* colors */
-   --MAIN-COLOR: whitesmoke;
+   --MAIN-COLOR: #DEEBF8;
    --LISTBULLET-COLOR: #61DBFB;
 }
 .main {
    color: var(--MAIN-COLOR);
-   padding: 4rem ;
+   padding: 4rem;
+   min-height: 100vh;
 }
 
 .main__ul {
@@ -15,4 +16,12 @@
 
 .main__ul li::marker {
    color: var(--LISTBULLET-COLOR);
+   font-size: 1.4rem;
+}
+
+@media screen and (max-width: 576px) {
+   .main {
+      font-size: medium;
+      padding: 2rem;
+   }
 }
