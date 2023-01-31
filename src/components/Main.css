@@ -1,9 +1,29 @@
 :root { 
    /* colors */
    --MAIN-COLOR: #DEEBF8;
+   --MAIN-DARKCOLOR: #3C3C3C;
+   --MAIN-BGLIGHT: #FFF;
    --LISTBULLET-COLOR: #61DBFB;
 }
-.main {
+
+main.light {
+   background-color: var(--MAIN-BGLIGHT);
+   background-image: url("../assets/react_gray.svg"); 
+   background-repeat: no-repeat;
+   background-size: 70% auto;
+   background-position: right -70% bottom 60%;
+   color: var(--MAIN-DARKCOLOR);
+   padding: 4rem;
+   min-height: 100vh;
+}
+
+main.dark {
+   background-image: url("../assets/react_gray.svg"); 
+   background-image: url("../assets/react_gray.svg"); 
+   background-repeat: no-repeat;
+   background-size: 70% auto;
+   background-position: right -70% bottom 60%;
+   background-color: #282D35;
    color: var(--MAIN-COLOR);
    padding: 4rem;
    min-height: 100vh;
@@ -20,8 +40,12 @@
 }
 
 @media screen and (max-width: 576px) {
-   .main {
+   main {
       font-size: medium;
+      padding: 2rem;
+      width: 100%;
+   }
+   main.dark, main.light {
       padding: 2rem;
    }
 }
