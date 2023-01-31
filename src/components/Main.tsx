@@ -3,14 +3,9 @@ import ReactLogo from "../assets/react_gray.svg"
 
 import "./Main.css"
 
-const Main = () => {
+const Main = (props: any) => {
    return (
-      <div className="main" style={{
-         backgroundImage: `url(${ReactLogo})`,
-         backgroundRepeat: "no-repeat",
-         backgroundSize: "70% auto",
-         backgroundPosition: "right -70% bottom 60%"
-      }}>
+      <main className={props.darkMode ? "dark": "light"} >
          <h1>Fun facts about React</h1>
          <ul className="main__ul">
             <li>Was first released in 2013</li>
@@ -19,7 +14,7 @@ const Main = () => {
             <li>Is maintained by Facebook</li>
             <li>Powers thousands of enterprise apps, including mobile apps</li>
          </ul>
-      </div>
+      </main>
    )
 }
 
