@@ -3,6 +3,7 @@ import ReactLogo from "../assets/react.svg";
 import "./Navbar.css"
 
 const Navbar = (props: any) => {
+    
    return (
       <nav className={props.darkMode ? "navbar dark": "navbar light"}>
          <div className="navbar__brand">
@@ -15,7 +16,7 @@ const Navbar = (props: any) => {
                 <p className="toggler--light">Light</p>
                 <div 
                     className="toggler--slider"
-                    onClick={props.toggleDarkMode}
+                    onClick={props.dispatchDark}
                 >
                     <div className="toggler--slider--circle"></div>
                 </div>
