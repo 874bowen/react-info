@@ -75,6 +75,10 @@ footer{
   bottom: 0;
 }
 
+.Row {
+  display: flex;
+  justify-content: center;
+}
 
 /* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
