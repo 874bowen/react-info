@@ -2,13 +2,15 @@ import React from "react"
 import ReactLogo from "../assets/react_gray.svg"
 import ComponentComposition from "./ComponentComposition"
 import DynamicChildrenManip from "./DynamicChildrenManip"
+import Hoc from "./Hoc"
 
 import "./Main.css"
 
 const Main = (props: any) => {
    return (
-      <DynamicChildrenManip />
+      // <DynamicChildrenManip />
       // <ComponentComposition />
+      <Hoc />
       // <main className={props.darkMode ? "dark": "light"} >
       //    <h1>Fun facts about React</h1>
       //    <ul className="main__ul">
