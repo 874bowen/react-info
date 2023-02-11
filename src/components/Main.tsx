@@ -5,12 +5,14 @@ import DynamicChildrenManip from "./DynamicChildrenManip"
 import Hoc from "./Hoc"
 
 import "./Main.css"
+import RenderProps from "./RenderProps"
 
 const Main = (props: any) => {
    return (
       // <DynamicChildrenManip />
       // <ComponentComposition />
-      <Hoc />
+      // <Hoc />
+      <RenderProps />
       // <main className={props.darkMode ? "dark": "light"} >
       //    <h1>Fun facts about React</h1>
       //    <ul className="main__ul">
