@@ -34,9 +34,7 @@ const DrinksCount = () => {
 const RenderProps = () => {
    return(
       <div className="App">
-         <header className="Header">
-            Little Taco shop
-         </header>
+         <header className="Header">Little Taco Shop</header>
          <DesertCount />
             <DrinksCount />
       </div>
