@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../index.css"
+import FeedbackForm from "./FeedbackForm";
 
 const DataFetcher = ({render, url}: any) => {
    const [data, setData] = useState<string []>([])
@@ -31,12 +32,18 @@ const DrinksCount = () => {
    )
 }
 
+function handleSubmit() {
+   console.log("Form Submitted");
+   
+}
+
 const RenderProps = () => {
    return(
       <div className="App">
          <header className="Header">Little Taco Shop</header>
          <DesertCount />
-            <DrinksCount />
+         <DrinksCount />
+         <FeedbackForm onSubmit={handleSubmit}/>
       </div>
    )
 }
